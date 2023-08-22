@@ -4,11 +4,11 @@ document.addEventListener("DOMContentLoaded", function() {
     const submitButton = document.getElementById("submit-button");
     const resultElement = document.getElementById("result");
 
-    const questionsPerPage = 10; // Now displaying 10 questions per page
+    const questionsPerPage = 10;
     let currentPage = 1;
     let quizData = [];
+    let userAnswers = new Array(30).fill(null);
 
-    // Fetch JSON data
     fetch("questions.json")
         .then(response => response.json())
         .then(data => {
@@ -41,6 +41,24 @@ document.addEventListener("DOMContentLoaded", function() {
             questionDiv.appendChild(labelNo);
 
             questionsContainer.appendChild(questionDiv);
+
+            // Set user's answer for the current question if available
+            const userAnswer = userAnswers[i];
+            const radioButtonYes = questionDiv.querySelector(`input[value="yes"]`);
+            const radioButtonNo = questionDiv.querySelector(`input[value="no"]`);
+            if (userAnswer === "yes") {
+                radioButtonYes.checked = true;
+            } else if (userAnswer === "no") {
+                radioButtonNo.checked = true;
+            }
+
+            // Attach event listener to store user's answers
+            radioButtonYes.addEventListener("change", () => {
+                userAnswers[i] = "yes";
+            });
+            radioButtonNo.addEventListener("change", () => {
+                userAnswers[i] = "no";
+            });
         }
     }
 
@@ -60,16 +78,13 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     submitButton.addEventListener("click", function() {
-        const answers = document.querySelectorAll("input:checked");
         let correctAnswers = 0;
-
-        // Check each selected answer
-        answers.forEach((answer, index) => {
-            if (answer.value === quizData[(currentPage - 1) * questionsPerPage + index].correctAnswer) {
+        for (let i = 0; i < quizData.length; i++) {
+            if (userAnswers[i] === quizData[i].correctAnswer) {
                 correctAnswers++;
             }
-        });
+        }
 
-        resultElement.textContent = `You answered ${correctAnswers} questions correctly out of ${questionsPerPage}.`;
+        resultElement.textContent = `You answered ${correctAnswers} questions correctly out of ${quizData.length}.`;
     });
 });
