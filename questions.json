@@ -1,0 +1,122 @@
+[
+    {
+        "question": "Is the sky blue?",
+        "correctAnswer": "yes"
+    },
+    {
+        "question": "Does water boil at 100 degrees Celsius?",
+        "correctAnswer": "yes"
+    },
+    {
+        "question": "Is the capital of France Paris?",
+        "correctAnswer": "yes"
+    },
+    {
+        "question": "Is the Earth flat?",
+        "correctAnswer": "no"
+    },
+    {
+        "question": "Is JavaScript a programming language?",
+        "correctAnswer": "yes"
+    },
+    {
+        "question": "Is the Mona Lisa a famous painting?",
+        "correctAnswer": "yes"
+    },
+    {
+        "question": "Does a year have 365 days?",
+        "correctAnswer": "yes"
+    },
+    {
+        "question": "Is the Pacific Ocean the largest ocean?",
+        "correctAnswer": "yes"
+    },
+    {
+        "question": "Is a tomato a fruit?",
+        "correctAnswer": "yes"
+    },
+    {
+        "question": "Is the moon made of cheese?",
+        "correctAnswer": "no"
+    },
+    {
+        "question": "Is Antarctica the coldest continent?",
+        "correctAnswer": "yes"
+    },
+    {
+        "question": "Is the human heart a muscle?",
+        "correctAnswer": "yes"
+    },
+    {
+        "question": "Do birds fly?",
+        "correctAnswer": "yes"
+    },
+    {
+        "question": "Is the Great Wall of China visible from space?",
+        "correctAnswer": "no"
+    },
+    {
+        "question": "Do plants conduct photosynthesis?",
+        "correctAnswer": "yes"
+    },
+    {
+        "question": "Is the Nile the longest river?",
+        "correctAnswer": "yes"
+    },
+    {
+        "question": "Is the Eiffel Tower in Italy?",
+        "correctAnswer": "no"
+    },
+    {
+        "question": "Does light travel faster than sound?",
+        "correctAnswer": "yes"
+    },
+    {
+        "question": "Is soccer also known as football in most of the world?",
+        "correctAnswer": "yes"
+    },
+    {
+        "question": "Is the sun a star?",
+        "correctAnswer": "yes"
+    },
+    {
+        "question": "Is DNA a molecule that carries genetic information?",
+        "correctAnswer": "yes"
+    },
+    {
+        "question": "Is the Statue of Liberty in New York City?",
+        "correctAnswer": "yes"
+    },
+    {
+        "question": "Is the Earth's core primarily composed of iron?",
+        "correctAnswer": "yes"
+    },
+    {
+        "question": "Are dolphins mammals?",
+        "correctAnswer": "yes"
+    },
+    {
+        "question": "Is the speed of light approximately 299,792,458 meters per second?",
+        "correctAnswer": "yes"
+    },
+    {
+        "question": "Is Mount Everest the tallest mountain?",
+        "correctAnswer": "yes"
+    },
+    {
+        "question": "Is gravity a force that attracts two masses toward each other?",
+        "correctAnswer": "yes"
+    },
+    {
+        "question": "Is the Sahara the largest desert?",
+        "correctAnswer": "yes"
+    },
+    {
+        "question": "Do penguins live in the Arctic?",
+        "correctAnswer": "no"
+    },
+    {
+        "question": "Is the human body made up of cells?",
+        "correctAnswer": "yes"
+    }
+]
